@@ -2,8 +2,12 @@
   "name": "view",
   "version": "0.0.1",
   "repository": "https://github.com/mua-mua/muamua-order",
+  "private": true,
   "scripts": {
     "build": "cd shop; yarn build",
     "clean": "rm -r ./shop/dist/static"
+  },
+  "dependencies": {
+    "express": "~3.3.4"
   }
 }
