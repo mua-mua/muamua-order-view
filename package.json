@@ -1,7 +1,7 @@
 {
   "name": "view",
   "version": "0.0.1",
-  "repository": "https://github.com/mua-mua/muamua-order",
+  "repository": "https://github.com/mua-mua/muamua-order-view",
   "private": true,
   "scripts": {
     "build": "cd shop; yarn build",
