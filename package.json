@@ -1,0 +1,9 @@
+{
+  "name": "view",
+  "version": "0.0.1",
+  "repository": "https://github.com/mua-mua/muamua-order",
+  "scripts": {
+    "build": "cd shop; yarn build",
+    "clean": "rm -r ./shop/dist/static"
+  }
+}
