@@ -5,7 +5,7 @@
       <h2>Comments</h2>
       <input v-model="comment" placeholder="input a comment">
       <p>Comment is {{ comment }} </p>
-      <button v-on:click="hoge">POST</button>
+      <button v-on:click="postComment">POST</button>
     </div>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
     }
   },
   methods: {
-    hoge: function() {
+    postComment: function() {
       const comment = this.comment;
       const data = {"comment": comment};
       axios({
