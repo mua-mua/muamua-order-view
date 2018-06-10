@@ -25,13 +25,6 @@ export default {
       console.log(`host is: ${host}`);
       const comment = this.comment;
       const data = {"comment": comment};
-
-      // axios({
-      //   method: "post",
-      //   url: "https://damp-lowlands-89879.herokuapp.com/api/v1/order-detail/comment",
-      //   data: data
-      // });
-
       axios({
         method: "post",
         url: `${host}/api/v1/order-detail/comment`,

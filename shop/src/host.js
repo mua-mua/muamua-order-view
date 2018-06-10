@@ -1,1 +1,1 @@
-export default process.env.NODE_ENV == "production" ? "https://damp-lowlands-89879.herokuapp.com/api/v1/order-detail/comment" : "";
+export default process.env.NODE_ENV == "production" ? "https://damp-lowlands-89879.herokuapp.com" : "";
