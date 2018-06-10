@@ -11,6 +11,8 @@
 </template>
 
 <script lang="js">
+import axios from "axios";
+
 export default {
   data: function() {
     return {
@@ -19,7 +21,20 @@ export default {
   },
   methods: {
     hoge: function() {
-      console.log(this.comment);
+      const comment = this.comment;
+      const data = {"comment": comment};
+
+      // axios({
+      //   method: "post",
+      //   url: "https://damp-lowlands-89879.herokuapp.com/api/v1/order-detail/comment",
+      //   data: data
+      // });
+
+      axios({
+        method: "post",
+        url: "/api/v1/order-detail/comment",
+        data: data
+      });
     }
   }
 }
