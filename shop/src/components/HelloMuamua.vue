@@ -22,7 +22,6 @@ export default {
   },
   methods: {
     hoge: function() {
-      console.log(`host is: ${host}`);
       const comment = this.comment;
       const data = {"comment": comment};
       axios({
