@@ -1,16 +1,25 @@
 <template>
   <div class="muamua">
     <h1>Hello MuaMua</h1>
-    <h2>Comments</h2>
-    <button v-on:click="hoge">POST</button>
+    <div>
+      <h2>Comments</h2>
+      <input v-model="comment" placeholder="input a comment">
+      <p>Comment is {{ comment }} </p>
+      <button v-on:click="hoge">POST</button>
+    </div>
   </div>
 </template>
 
 <script lang="js">
 export default {
+  data: function() {
+    return {
+      comment: ""
+    }
+  },
   methods: {
-    hoge: function(event) {
-      console.log("hoge");
+    hoge: function() {
+      console.log(this.comment);
     }
   }
 }
