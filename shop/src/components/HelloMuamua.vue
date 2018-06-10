@@ -12,6 +12,7 @@
 
 <script lang="js">
 import axios from "axios";
+import host from "./../host";
 
 export default {
   data: function() {
@@ -21,6 +22,7 @@ export default {
   },
   methods: {
     hoge: function() {
+      console.log(`host is: ${host}`);
       const comment = this.comment;
       const data = {"comment": comment};
 
@@ -32,7 +34,7 @@ export default {
 
       axios({
         method: "post",
-        url: "/api/v1/order-detail/comment",
+        url: `${host}/api/v1/order-detail/comment`,
         data: data
       });
     }
