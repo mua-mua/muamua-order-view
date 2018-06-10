@@ -1,11 +1,18 @@
 <template>
   <div class="muamua">
     <h1>Hello MuaMua</h1>
+    <h2>Comments</h2>
+    <button v-on:click="hoge">POST</button>
   </div>
 </template>
 
-<script>
+<script lang="js">
 export default {
+  methods: {
+    hoge: function(event) {
+      console.log("hoge");
+    }
+  }
 }
 </script>
 
