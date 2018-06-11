@@ -24,11 +24,15 @@ export default {
     postComment: function() {
       const comment = this.comment;
       const data = {"comment": comment};
-      axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-      axios.defaults.headers.post['Content-Type'] = 'application/json';
+      // axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+      // axios.defaults.headers.post['Content-Type'] = 'application/json';
       axios({
         method: "post",
         url: `${host}/api/v1/order-detail/comment`,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json'
+        },
         data: data
       });
     }
