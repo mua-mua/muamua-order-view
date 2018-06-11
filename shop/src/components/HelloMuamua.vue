@@ -27,6 +27,10 @@ export default {
       axios({
         method: "post",
         url: `${host}/api/v1/order-detail/comment`,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json'
+        },
         data: data
       });
     }
