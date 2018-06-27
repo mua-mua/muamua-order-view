@@ -1,12 +1,9 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <h1>MUAMUA</h1>
-    <router-link to="/hello">To Hello</router-link>
-    <br>
     <router-link to="/muamua">To Muamua</router-link>
     <br>
-    <router-link to="/comment-list">Comment List</router-link>
+    <router-link to="/orders">注文一覧</router-link>
     <router-view></router-view>
   </div>
 </template>
