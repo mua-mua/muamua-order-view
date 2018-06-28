@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import HelloMuamua from './components/HelloMuamua.vue';
+import Orders from './components/Orders.vue';
 
 Vue.use(Router);
 

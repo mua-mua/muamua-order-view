@@ -2,7 +2,7 @@
  * 注文一覧画面用store.
  */
 import axios from 'axios';
-import host from './../host';
+import host from './../../host';
 
 export default {
   state: {

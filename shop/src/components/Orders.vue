@@ -23,7 +23,7 @@
       return {
         columns: [
           {
-            itemName: '商品名'
+            itemName: '商品名',
             provideStatus: '提供'
           }
         ],
@@ -36,7 +36,7 @@
     },
     methods: {
       getOrders() {
-        this.$store.dispatch('orders/getOrders');
+        this.$store.dispatch('getOrders');
       }
     },
     created() {
